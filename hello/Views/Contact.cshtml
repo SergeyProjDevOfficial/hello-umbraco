@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Contact>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div id="page-top" class="politics_version">
+	
+	<section style="width: 60%; margin-left: 20%; padding: 5%; height: 100%">
+		<div class="heading">
+		    <h1>Write us</h1>
+		    <div style="margin-left: 10%; margin-top: 10%">
+			    <h3>Phone:<br> 
+			        @Model.Value("phoneNubmer")</h3>
+			    <br>
+		        <h3>Skype:<br> 
+		            @Model.Value("skype")</h3>
+		        <br>
+			    <h3>Instagram:<br> 
+			        @Model.Value("instagram")</h3>
+			</div>
+		</div>
+	</section>
+
+</div>

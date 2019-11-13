@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.About>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div id="page-top" class="politics_version" style="background-image: url(https://thumbs.gfycat.com/ImaginativeNaiveIrishdraughthorse-size_restricted.gif); background-repeat: no-repeat; background-size: cover">
+	<section class="main-banner parallaxie">
+		<div class="heading">
+		    <h1>About</h1>
+			<div style="width: 40%; margin-left: 30%; font-size: 20px">@Model.Value("textAbout")</div>
+			<img src="/Media/yxioyyht/avatar.jpg" alt="HTML5 Icon" width="400" height="400">
+		</div>
+	</section>
+
+</div>

@@ -1,14 +1,21 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.HomePage>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-	Layout = null;
+	Layout = "Master.cshtml";
 }
 
-<html>
-    <head>
-        <title>@Model.Value("title")</title>
-    </head>
-    <body>
-        @Model.Value("body")
-    </body>
-</html>
+<div id="page-top" class="politics_version">
+	
+	<section id="home" class="main-banner parallaxie">
+		<div class="heading">
+			<h1>@Model.Value("welcome")</h1>
+			<h3 class="cd-headline clip is-full-width">
+				<span class="cd-words-wrapper">
+				    <b class="is-visible">Web Development</b>
+					<b>@Model.Value("welcomeText")</b>
+				</span>
+			</h3>
+		</div>
+	</section>
+
+</div>

@@ -1,0 +1,104 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Master>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+}
+<html lang="en">
+<head>
+    
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>@Model.Value("title")</title>  
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="/Umbraco/assets/img/images_template/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/Umbraco/assets/img/images_template/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Umbraco/assets/css/css-template/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/Umbraco/assets/css/css-template/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/Umbraco/assets/css/css-template/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Umbraco/assets/css/css-template/custom.css">
+    
+    <!-- ALL JS FILES -->
+    <script src="/Umbraco/Js/js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="/Umbraco/Js/js/jquery.mobile.customized.min.js"></script>
+	<script src="/Umbraco/Js/js/jquery.easing.1.3.js"></script> 
+	<script src="/Umbraco/Js/js/parallaxie.js"></script>
+	<script src="/Umbraco/Js/js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="/Umbraco/Js/js/jqBootstrapValidation.js"></script>
+    <script src="/Umbraco/Js/js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="/Umbraco/Js/js/custom.js"></script>
+    <script src="/Umbraco/Js/js/jquery.vide.js"></script>
+    
+</head>
+  
+<body style="background-image: url(https://thumbs.gfycat.com/CanineSameEwe-small.gif); background-size: cover;">
+    
+    <!-- Navigation Header-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger">
+			<a href="/home-page"></a><img class="img-fluid" width="100" height="100" src="/Media/logo.png" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/home-page" style="font-size: 20px; margin-left: 10px">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/text-page" style="font-size: 20px; margin-left: 10px">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/about" style="font-size: 20px; margin-left: 10px">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/contact" style="font-size: 20px; margin-left: 10px">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        
+    @RenderBody()
+
+    <!-- Copyright Footer-->
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="/home-page">Home</a>
+                        <a href="/text-page">Blog</a>
+                        <a href="/about">About</a>
+                        <a href="/contact">Contact</a>
+                    </p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2019
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+</body>
+
+</html>
