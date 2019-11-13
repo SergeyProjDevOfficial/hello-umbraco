@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9885cfa24a5dc72b")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.8")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a2e72ee8d6154d92")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -83,6 +83,34 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Download Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("downloadLink")]
+		public string DownloadLink => this.Value<string>("downloadLink");
+
+		///<summary>
+		/// Photo of the product
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("photoOfTheProduct")]
+		public IPublishedContent PhotoOfTheProduct => this.Value<IPublishedContent>("photoOfTheProduct");
+
+		///<summary>
+		/// Product Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("productDescription")]
+		public IHtmlString ProductDescription => this.Value<IHtmlString>("productDescription");
+
+		///<summary>
+		/// Product title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("productTitle")]
+		public string ProductTitle => this.Value<string>("productTitle");
+
+		///<summary>
 		/// Welcome: Text to welcome
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
@@ -90,11 +118,18 @@ namespace Umbraco.Web.PublishedModels
 		public string Welcome => this.Value<string>("welcome");
 
 		///<summary>
-		/// Welcome Text
+		/// Welcome Text One
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		[ImplementPropertyType("welcomeText")]
-		public string WelcomeText => this.Value<string>("welcomeText");
+		[ImplementPropertyType("welcomeTextOne")]
+		public string WelcomeTextOne => this.Value<string>("welcomeTextOne");
+
+		///<summary>
+		/// Welcome Text Two
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("welcomeTextTwo")]
+		public string WelcomeTextTwo => this.Value<string>("welcomeTextTwo");
 	}
 
 	/// <summary>Text Page</summary>

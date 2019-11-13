@@ -4,18 +4,57 @@
 	Layout = "Master.cshtml";
 }
 
+<style>
+    .purple{
+        background: linear-gradient(to top, #cc3399 0%, #9900cc 100%);
+    }
+    .purple2{
+        background: linear-gradient(to top, #660066 0%, #990099 100%);
+    }
+</style>
+
 <div id="page-top" class="politics_version">
 	
+	<!-- Welcome section -->
 	<section id="home" class="main-banner parallaxie">
 		<div class="heading">
 			<h1>@Model.Value("welcome")</h1>
 			<h3 class="cd-headline clip is-full-width">
 				<span class="cd-words-wrapper">
-				    <b class="is-visible">Web Development</b>
-					<b>@Model.Value("welcomeText")</b>
+				    <b class="is-visible">@Model.Value("welcomeTextOne")</b>
+					<b>@Model.Value("welcomeTextTwo")</b>
 				</span>
 			</h3>
 		</div>
 	</section>
+	<!-- Welcome section -->
+	
+	<!-- Out product section -->
+	<section style="height: 600px; padding-top: 100px;" class="purple">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 col-sm-6 col-sm-push-6">
+					<div class="mu-hero-right">
+					    @{var image = Model.Value<IPublishedContent>("photoOfTheProduct");}
+                        <img width="1000" heigh="733" src="@image.Url">
+						<!--img src="assets/images/ebook.png" alt="Ebook img">-->
+					</div>
+				</div>
+
+				<div class="col-md-6 col-sm-6 col-sm-pull-6">
+					<div class="mu-hero-left">
+						<h1>@Model.Value("productTitle")</h1>
+						@Model.Value("productDescription")
+						<a href="@Model.Value("downloadLink")" class="mu-primary-btn purple2">Download!</a>
+					</div>
+				</div>	
+
+			</div>
+		</div>
+	</section>
+	<!-- Out product section -->
+	
+	
 
 </div>
