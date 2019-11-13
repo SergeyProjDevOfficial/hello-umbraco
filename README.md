@@ -8,8 +8,8 @@ Empty umbraco web site.
 	2. Connect to IIS:
 		2.1 Open IIS
 		2.2 Click "Add Site"
-		2.3 Select path ~\hello-umbraco\hello-umbraco
-		2.4 Cliak "Ok"
+		2.3 Select path ~\hello-umbraco\hello
+		2.4 Click "Ok"
     
 	3. Configure IIS:
 		3.1 RBC on site -> Edit permissions... -> Security -> Edit -> Add...
@@ -18,7 +18,7 @@ Empty umbraco web site.
 		3.4 Apply
     
 	4. Attech DB to your server via SQL MS
-		DB contains in ~\hello-umbraco\installation\Database
+		DB contains in ~\hello-umbraco\install\Database
 		Don't forget to give your user permissions to read/write/own database
     
 	5. Add conncetion string to web.config: 
@@ -29,3 +29,6 @@ Empty umbraco web site.
 			PASSWORD - your DB password
         
 	6. Run site.
+
+# Login: dev@gmail.com
+# Password: 1234567890
